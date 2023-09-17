@@ -1,0 +1,115 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-input-placeholder{
+    color: rgb(154, 149, 149);
+    font-size:14px;
+}
+
+.modalSearchWrapper_class{
+    margin:0.5rem !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    max-height: fit-content;
+    justify-content: center;
+    width:fit-content;
+    min-width: 200px;
+   
+}
+
+.modalSearch__input{
+    margin-right:0.5rem;
+    margin-left:0.5rem;
+    font-size: 0.8rem;
+    height: 1.8rem !important;
+    line-height: 1;
+    padding-left:8px;
+    max-width: 18rem;
+    margin-top:0.5rem;
+    margin-bottom:0.5rem;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 4px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis ellipsis;
+}
+
+.modalSearch__input:focus{
+    border: 1.2px solid blue;
+}
+
+
+select{
+    cursor: pointer;
+    font-size:1rem ;
+    
+    
+}
+
+
+select::-webkit-scrollbar{
+    width: 4px;
+    background-color: grey;
+    
+}
+
+select::-webkit-scrollbar-track:hover {
+  background: whitesmoke;
+  
+}
+
+select::-webkit-scrollbar-thumb:hover {
+  background : grey;
+  
+}
+
+
+.searchBtn{
+    display: flex;
+    justify-content: flex-end;
+    margin-left:0.5rem;
+}
+
+.searchBtn > button{
+    height: 1.8rem !important;
+    width: 100px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border: none;
+    color:white;
+    outline: none;
+    font-weight:600;
+    background-image: linear-gradient(-45deg,  #00f000 50%, black 50%);
+    background-size: 300%;
+    background-position: 0%;
+    transition: all 0.2s ease-out;
+    padding: 4px;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.searchBtn > button:hover{
+    background-position: 100%;
+    color: black;
+    border : 1px solid grey;
+    
+}
+
+
+@media screen and (max-width : 270px) {
+    .modalSearchWrapper_class{
+        margin: 0.5rem !important;
+    }
+}
