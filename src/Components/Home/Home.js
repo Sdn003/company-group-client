@@ -215,6 +215,17 @@ function Home() {
           onReset={getTableData}
           cgBusinessType={setBusinessType}
         />
+        <div className="emptyFooter">
+          <div className="signature">
+            Created with{" "}
+            <i
+              className="bi bi-balloon-heart-fill"
+              fill="currentColor"
+              style={{ color: "crimson" }}
+            />{" "}
+            by <span className="sdn">Sudharsan S</span>
+          </div>
+        </div>
       </>
     );
   }

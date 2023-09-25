@@ -291,6 +291,7 @@ function CreateForm({ btnType, headerType }) {
                   <label className="label">Data Sharing : </label>
                   <input
                     type="checkbox"
+                    id="formField__checkbox"
                     className="formField__radio"
                     name="isDataSharing"
                     ref={defaultValueCheckBox}

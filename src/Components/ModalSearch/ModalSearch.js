@@ -3,16 +3,19 @@ import "./ModalSearch.css";
 
 function ModalSearch({ id, text, selectOption, optionArr, search, reset }) {
   
-  return ( 
+  return (
     <div id="modalSearchWrapper" className="modalSearchWrapper_class">
       <form className="modalSearchWrapper_form">
         <input
           className="modalSearch__input"
           type="number"
+          onKeyDown={(evt) =>
+            ["e", "E", "+", "-"].includes(evt.key) && evt.preventDefault()
+          }
           placeholder="Company Group Id"
           onChange={(e) => {
-            id(e.target.value)}
-          }
+            id(e.target.value);
+          }}
         />
         <input
           className="modalSearch__input"
@@ -35,7 +38,6 @@ function ModalSearch({ id, text, selectOption, optionArr, search, reset }) {
           })}
         </select>
       </form>
-
 
       <div id="searchBtn" className="searchBtn">
         <button type="submit" onClick={(e) => search(e)}>

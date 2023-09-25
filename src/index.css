@@ -39,3 +39,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.emptyFooter{
+  height: 50px;
+  width:100%;
+  bottom: 0;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+
+
+.sdn{
+  font-style: italic;
+}

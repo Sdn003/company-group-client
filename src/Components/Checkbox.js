@@ -10,7 +10,12 @@ export const Checkbox = React.forwardRef(({ indeterminate, ...rest }, ref) => {
 
   return (
     <>
-      <input type="checkbox" ref={resolvedRef} {...rest} />
+        <input
+          type="checkbox"
+          ref={resolvedRef}
+          {...rest}
+          className="modal__checkBox"
+        />
     </>
   );
 });

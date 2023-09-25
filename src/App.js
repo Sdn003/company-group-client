@@ -7,6 +7,7 @@ import Edit from './Components/Edit/Edit';
 import { ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import ErrorBoundary from './ErrorBoundary';
+import View from './Components/View/View';
 
 function App() {
    
@@ -43,6 +44,14 @@ function App() {
             element={
               <ErrorBoundary>
                 <Home />
+              </ErrorBoundary>
+            }
+          />
+          <Route
+            path="/View/:id"
+            element={
+              <ErrorBoundary>
+                <View />
               </ErrorBoundary>
             }
           />

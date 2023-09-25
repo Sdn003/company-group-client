@@ -50,6 +50,37 @@ function TableHome({
     {
       Header: "Action",
       columns: [
+        //Adding View
+        {
+          Header: "View",
+          accessor: "view",
+          disableSortBy: true,
+          disableFilters: true,
+          Cell: ({ cell }) => {
+            let companyGroupId = cell.row.original._id;
+            return (
+              <>
+                <button
+                  className="tableHome__action__btn"
+                  onClick={() => {
+                    navigate("/View/" + companyGroupId, {
+                      state: {
+                        cell: cell.row.original,
+                      },
+                    });
+                  }}
+                >
+                  <i
+                    className="bi bi-eye-fill"
+                    title="Delete"
+                    id="tableHome__action__btn"
+                  />
+                </button>
+              </>
+            );
+          },
+        },
+
         {
           Header: "Edit",
           accessor: "edit",
